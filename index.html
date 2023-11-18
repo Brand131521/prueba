@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container-1">
+        <p>Nombre de la empresa</p>
+        <button class="boton-inicio">
+            Inicio
+        </button>
+
+        <a href="#">Opción del menu</a>
+        <a href="#">Opción del menu</a>
+        <a href="#">Opción del menu</a>
+        <a href="#">Opción del menu</a>
+        <a href="#">Opción del menu</a>
+        <a href="#">Opción del menu</a>
+        <a href="#">Opción del menu</a>
+        <a href="#">Opción del menu</a>
+        <a href="#">Opción del menu</a>
+
+        <button class="boton-salir">
+            <img src="image/salida.png" alt="">
+            <p>salir</p>
+        </button>
+    </div>
+
+    
+    <div id="container-2">
+        <header>
+            <button class="boton-menu"><img src="image/bx-left-indent.svg" alt=""></button>
+            <div class="usuario">
+                <div>
+                </div>
+                <b>usuario</b>
+            </div>
+        </header>
+    
+        <article>
+        </article>
+    
+        <footer>
+            <b>Datos De Estudiante</b>
+        </footer>
+    </div>
+
+    <script>
+     const boton_menu = document.querySelector('.boton-menu');
+      boton_menu.addEventListener('click', function () {
+        console.log('clik')
+        document.getElementById('container-1').classList.toggle('active');
+        console.log(document.getElementById('container-1'))
+
+        document.getElementById('container-2').classList.toggle('active');
+        console.log(document.getElementById('container-2'))
+      });
+
+      const boton_salir = document.querySelector('.boton-salir');
+      boton_salir.addEventListener('click', function () {
+        console.log('clik')
+        document.getElementById('container-1').classList.toggle('active');
+        console.log(document.getElementById('container-1'))
+      });
+    </script>
+</body>
+</html>
